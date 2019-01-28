@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4569599986,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Capturing WebElements",
+        "description": "",
+        "id": "opening-facebook-\u0026-checking-elements;capturing-webelements",
+        "after": [
+          {
+            "result": {
+              "duration": 782726815,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2786661266,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Opening Facebook Homepage",
+            "match": {
+              "location": "FBStepDefs.facebookGiven()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 776215080,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Capture the WebElements",
+            "match": {
+              "location": "FBStepDefs.facebookWhen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7619403959,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "login into facebook",
+            "match": {
+              "location": "FBStepDefs.facebookThen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Opening Facebook \u0026 Checking Elements",
+    "description": "",
+    "id": "opening-facebook-\u0026-checking-elements",
+    "keyword": "Feature",
+    "uri": "FB.feature"
+  }
+]
