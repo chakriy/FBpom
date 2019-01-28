@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ="D:\\FBpom\\src\\test\\Feature",
+        features ="D:\\FBpom1\\src\\test\\Feature",
 
         // tags = {""},
 

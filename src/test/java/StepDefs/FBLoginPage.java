@@ -7,7 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import static StepDefs.Hooks.driver;
 
-public class FBLoginPage {
+public class FBLoginPage
+{
     WebElement eMailInput;
     WebElement passInput;
     WebElement submitButton;
@@ -22,8 +23,9 @@ public class FBLoginPage {
     WebElement radioButton2;
     WebElement signUpButton;
 
-    public void captureWE(WebDriver driver) {
-
+    public FBLoginPage(WebDriver driver)
+    {
+        accessFB("https://www.facebook.com/");
         eMailInput = driver.findElement(By.id("email"));
         passInput = driver.findElement(By.id("pass"));
         submitButton = driver.findElement(By.id("u_0_2"));
@@ -39,14 +41,13 @@ public class FBLoginPage {
         signUpButton = driver.findElement(By.id("u_0_13"));
     }
 
-
-    public static void accessFB(String S) {
+    public static void accessFB(String S)
+    {
         driver.get(S);
     }
     public void isSeen()
     {
-               if(eMailInput.isDisplayed())
-
+        if(eMailInput.isDisplayed())
         {
             enterEmail("panga.vl1@gmail.com");
         }
@@ -56,23 +57,26 @@ public class FBLoginPage {
         }
         if(passInput.isDisplayed())
         {
-            pwd("Test@123!");
+            enterPwd("Test@123!");
         }
         else
         {
             System.out.println("Password Input is not Displayed");
         }
     }
-    public void enterEmail(String S) {
+    public void enterEmail(String S)
+    {
         eMailInput.sendKeys(S);
 
     }
 
-    public void pwd(String S) {
+    public void enterPwd(String S)
+    {
         passInput.sendKeys(S);
     }
 
-    public void click1() {
+    public void click1()
+    {
         submitButton.click();
     }
 }
